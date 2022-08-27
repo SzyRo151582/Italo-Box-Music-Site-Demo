@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Italo Box Music</title>
+
+    <link rel="icon" type="image" href="images/other/shop-logo.jpg" />
+
+    <link rel="stylesheet" href="site-style.css" type="text/css"/>
+    <link rel="stylesheet" href="slider-style.css" type="text/css"/>
+    <link rel="stylesheet" href="fontello/css/fontello.css" type="text/css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <div class="primary">
+        <div class="logo-description">
+          <a href="main-site.html"
+            ><img
+              src="images/other/my-shop-logo-1522005675.jpg"
+              alt="Main Site"
+          /></a>
+        </div>
+
+        <div class="account-buttons">
+          <a href="login-register.html">
+            <button class="account-button-style">Zaloguj się</button>
+          </a> |
+            <button class="account-button-style">Twoje Konto</button> |
+            <button class="account-button-style">Koszyk</button> |
+          <select>
+            <option>DOLLAR</option>
+            <option>EURO</option>
+            <option>PLN</option>
+          </select>
+          |
+          <select>
+            <option>English</option>
+            <option>Polski</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="site-map">
+        <div class="site-map-buttons">
+          <a href="main-site.html"
+            ><button class="site-map-button-style">Strona Główna</button></a
+          ><button class="site-map-button-style">Kontakt</button
+          ><button class="site-map-button-style">Mapa Strony</button>
+        </div>
+
+        <div class="searcher">
+          <input
+            class="searcher-input"
+            type="text"
+            placeholder="Szukaj"
+            name="search"
+          />
+          <button class="searcher-button" type="submit">
+            <img style="width: 20px" src="images/other/search-icon.png" />
+          </button>
+        </div>
+      </div>
+
+      <div class="latest-slider">
+        <div class="slider fade">
+          <span class="slider-text">Francesca E Luigi - Dirty Remixes 16,00 &euro;</span>
+          <img
+                  class="slider-image"
+                  src="images/cds/francesca-e-luigi-dirty-remixes-cd.jpg"
+          />
+        </div>
+
+        <div class="slider fade">
+          <span class="slider-text">Master Voice - The Best Of 14,00 &euro;</span>
+          <img
+                  class="slider-image"
+                  src="images/cds/master-voice-the-best-of-cd.jpg"
+          />
+        </div>
+
+        <div class="slider fade">
+          <span class="slider-text">Obsession Of Time - Onwards 14,00 &euro;</span>
+          <img
+                  class="slider-image"
+                  src="images/cds/obsession-of-time-onwards-cd.jpg"
+          />
+        </div>
+
+        <div id="slider-dots">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+
+      <script type="text/javascript" src="slider.js"></script>
+
+      <h2 style="margin-left: 400px">
+        Popularne <span style="padding-left: 650px"></span> Najczęściej kupowane
+      </h2>
+
+      <div>
+        <div class="products">
+          <ol class="products-list">
+            <li><em class="icon-right-open"></em><span>Nowości</span></li>
+            <li><em class="icon-right-open"></em><span>Bestsellery</span></li>
+            <li><em class="icon-right-open"></em><span>Wydawnictwo</span> <button id="expand-publishers-button" class="icon-plus" onclick="expandPublishers()"></button>
+              <ul id="products-list-publishers">
+                <li style="border-top: 1px solid lightgrey;"><em class="icon-right-open"></em><span>Italo Box Music</span></li>
+                <li><em class="icon-right-open"></em><span>Analog Language</span></li>
+                <li><em class="icon-right-open"></em><span>Blanco Y Negro</span></li>
+                <li><em class="icon-right-open"></em><span>Deluxe CD Music</span></li>
+                <li><em class="icon-right-open"></em><span>Hargent Media & Lastafroz</span></li>
+                <li><em class="icon-right-open"></em><span>Pokorny Music Solutions</span></li>
+                <li><em class="icon-right-open"></em><span>Space Sound Records</span></li>
+                <li><em class="icon-right-open"></em><span>Sp Records</span></li>
+                <li><em class="icon-right-open"></em><span>ZYX Music</span></li>
+                <li><em class="icon-right-open"></em><span>Xdivisions</span></li>
+                <li><em class="icon-right-open"></em><span>Softworks Records Italy</span></li>
+                <li><em class="icon-right-open"></em><span>Fantasy Factory Records</span></li>
+                <li><em class="icon-right-open"></em><span>Maschina Records</span></li>
+                <li><em class="icon-right-open"></em><span>Pbh Media</span></li>
+                <li style="border-bottom: none;"><em class="icon-right-open"></em><span>Inne</span></li>
+              </ul>
+            </li>
+            <li><em class="icon-right-open"></em><span>Italo Disco</span></li>
+            <li><em class="icon-right-open"></em><span>Eurodisco</span></li>
+            <li><em class="icon-right-open"></em><span>Electronica</span></li>
+            <li><em class="icon-right-open"></em><span>Eurodance</span></li>
+            <li><em class="icon-right-open"></em><span>Pop</span></li>
+            <li><em class="icon-right-open"></em><span>Synth Pop</span></li>
+            <li><em class="icon-right-open"></em><span>Extra Cena</span></li>
+            <li><em class="icon-right-open"></em><span>Pakiety za jedną wysyłkę</span></li>
+            <li><em class="icon-right-open"></em><span>Ostatnie sztuki, końcówki nakładu</span></li>
+            <li style="border-bottom: none;"><em class="icon-right-open"></em><span>Winyle</span></li>
+          </ol>
+
+          <script type="text/javascript" src="expand-publishers.js"></script>
+
+          <h2 style="margin-left: 20px">Tagi</h2>
+          <div class="tags">
+            <button class="button-tags">Italo Disco</button>
+            <button class="button-tags">Space Synth</button>
+            <button class="button-tags">Euro Disco</button>
+            <button class="button-tags">Galaxy Hunter</button>
+            <button class="button-tags">Birizdo</button>
+            <button class="button-tags">Stylove</button>
+            <button class="button-tags">Mirko Hirsh</button>
+            <button class="button-tags">Silent Circle</button>
+            <button class="button-tags">Top One</button>
+            <button class="button-tags">Fancy</button>
+          </div>
+        </div>
+
+        <div class="popular-products">
+          <table>
+            <table style="margin-bottom: 20px">
+              <tr>
+                <th>
+                  <a href="d-white-soulya-id-devils-plan.html"
+                    ><img
+                      src="images/cds/d-white-feat-soulya-id-devil-s-plan.jpg"
+                      alt="d-white-feat-soulya-id-devil-s-plan"
+                      width="300px"
+                  /></a>
+                </th>
+              </tr>
+              <tr>
+                <td class="popular-products-description">
+                  Singiel CDR ,nakład tylko 50 kopii ,fabrycznie numerowany.
+                  VIDEO
+                  <br /><br />
+                  <span class="popular-products-price">15,00 &euro;</span>
+                  <br /><br />
+                  <button class="add-to-cart-button">Dodaj do koszyka <em class="icon-right-open"></em></button>
+                </td>
+              </tr>
+            </table>
+
+            <table>
+              <tr>
+                <th>
+                  <a href="digital-base-project-3reedom.html">
+                    <img
+                      src="images/cds/digital-base-project-3reedom.jpg"
+                      alt="digital-base-project-3reedom"
+                      width="300px"
+                    />
+                  </a>
+                </th>
+              </tr>
+              <tr>
+                <td class="popular-products-description">
+                  Nakład 100 sztuk,fabrycznie numerowane VIDEO
+                  <br /><br />
+                  <span class="popular-products-price">15,00 &euro;</span>
+                  <br /><br />
+                  <button class="add-to-cart-button">Dodaj do koszyka <em class="icon-right-open"></em></button>
+                </td>
+              </tr>
+            </table>
+
+            <table style="margin-bottom: 20px">
+              <tr>
+                <th>
+                  <img
+                    src="images/cds/spatial-vox-voce-dell-anima.jpg"
+                    alt="spatial-vox-voce-dell-anima"
+                    width="300px"
+                  />
+                </th>
+              </tr>
+              <tr>
+                <td class="popular-products-description">
+                  Singiel cd, nakład 100 kopii, fabrycznie numerowany VIDEO
+                  <br /><br />
+                  <span class="popular-products-price">14,00 &euro;</span>
+                  <br /><br />
+                  <button class="add-to-cart-button">Dodaj do koszyka <em class="icon-right-open"></em></button>
+                </td>
+              </tr>
+            </table>
+
+            <table>
+              <tr>
+                <th>
+                  <img
+                    src="images/cds/birizdo-i-am-mademoiselle.jpg"
+                    alt="birizdo-i-am-mademoiselle"
+                    width="300px"
+                  />
+                </th>
+              </tr>
+              <tr>
+                <td class="popular-products-description">
+                  Nakład 300 sztuk VIDEO
+                  <br /><br />
+                  <span class="popular-products-price">8,00 &euro;</span>
+                  <br /><br />
+                  <button class="add-to-cart-button">Dodaj do koszyka <em class="icon-right-open"></em></button>
+                </td>
+              </tr>
+            </table>
+          </table>
+        </div>
+
+        <div class="bestsellers">
+          <ul class="bestsellers-list">
+            <li>
+              <img
+                class="bestsellers-list-images"
+                src="images/cds/another-side-of-fancy-part-three.jpg"
+                alt="Another Side Of Fancy - Part Three"
+              />
+              <p class="bestsellers-list-names">Another Side Of Fancy - Part Three</p>
+              <div style="clear: both"></div>
+            </li>
+            <li>
+              <img
+                class="bestsellers-list-images"
+                src="images/cds/spatial-vox-cause-of-shining-in-your-eyes-the-1-st-album-cd.jpg"
+                alt="Spatial Vox – Cause Of Shining In Your Eyes (The 1'st
+              Album)"
+              />
+              <p class="bestsellers-list-names">Spatial Vox – Cause Of Shining In Your Eyes (The 1'st Album) CD</p>
+              <div style="clear: both"></div>
+            </li>
+            <li>
+              <img
+                class="bestsellers-list-images"
+                src="images/cds/silent-circle-lost-in-space.jpg"
+                alt="Silent Circle – Lost In Space"
+              />
+              <p class="bestsellers-list-names">Silent Circle – Lost In Space</p>
+              <div style="clear: both"></div>
+            </li>
+            <li>
+              <img
+                class="bestsellers-list-images"
+                src="images/cds/another-side-of-mike-mareen-part-three.jpg"
+                alt="Another Side Of Mike Mareen Part Three"
+              />
+              <p class="bestsellers-list-names">Another Side Of Mike Mareen Part Three</p>
+              <div style="clear: both"></div>
+            </li>
+            <li>
+              <img
+                class="bestsellers-list-images"
+                src="images/cds/trans-x-dreams-are-made-of-fantasies-cd.jpg"
+                alt="Trans-X – Dreams Are Made Of Fantasies"
+              />
+              <p class="bestsellers-list-names">Trans-X – Dreams Are Made Of Fantasies / CD</p>
+              <div style="clear: both"></div>
+            </li>
+            <li>
+              <img
+                class="bestsellers-list-images"
+                src="images/cds/another-side-of-fancy-megamix.jpg"
+                alt="Another Side Of Fancy - Megamix"
+              />
+              <p class="bestsellers-list-names">Another Side Of Fancy - Megamix</p>
+              <div style="clear: both"></div>
+            </li>
+            <li>
+              <img
+                class="bestsellers-list-images"
+                src="images/cds/magic-system-dj-the-system-of-magic-cd.jpg"
+                alt="Magic System D.J. – The System Of Magic"
+              />
+              <p class="bestsellers-list-names">Magic System D.J. – The System Of Magic / CD</p>
+              <div style="clear: both"></div>
+            </li>
+            <li>
+              <img
+                class="bestsellers-list-images"
+                src="images/cds/alimkhanov-a-right-time.jpg"
+                alt="Alimkhanova – Right Time"
+              />
+              <p class="bestsellers-list-names">AlimkhanOV A. – Right Time</p>
+              <div style="clear: both"></div>
+            </li>
+            <li>
+              <img
+                class="bestsellers-list-images"
+                src="images/cds/rygar-the-mind-of-the-universe.jpg"
+                alt="Rygar – The Mind Of The Universe"
+              />
+              <p class="bestsellers-list-names">Rygar – The Mind Of The Universe</p>
+              <div style="clear: both"></div>
+            </li>
+            <li>
+              <img
+                class="bestsellers-list-images"
+                src="images/cds/limelight-special-love-retubed.jpg"
+                alt="Limelight - Special Love"
+              />
+              <p class="bestsellers-list-names">Limelight - Special Love - Retubed</p>
+              <div style="clear: both"></div>
+            </li>
+          </ul>
+          <img
+            style="padding-left: 60px; margin-top: 25px;"
+            src="images/other/payment-methods.jpg"
+            alt="Sposoby płatności"
+            width="100px"
+          />
+        </div>
+      </div>
+
+      <div class="secondary">
+        <div class="follow">
+          <h2>Obserwuj na Facebooku</h2>
+          <a href="https://www.facebook.com/italo.box.music/"
+            ><img
+              src="images/other/facebook-link.jpg"
+              alt="Facebook Funpage Link"
+              title="FB Italo Box Music"
+              width="300px"
+          /></a>
+        </div>
+
+        <div class="description">
+          <ul>
+            <li>
+              <em class="icon-truck"></em>
+              <div class="description-text">
+                <h3>Szybka dostawa</h3>
+                <p>
+                  Korzystamy tylko z sprawdzonych firm wysyłkowych jak Inpost, DHL,
+                  DPD, UPS.
+                </p>
+              </div>
+              <div style="clear: both"></div>
+            </li>
+            <li>
+              <em class="icon-phone"></em>
+              <div class="description-text">
+                <h3>Skontaktuj się z nami</h3>
+                <p>
+                  W przypadku gdy chcesz złożyć zamówienie poprzez email lub
+                  porozmawiać o współpracy z naszą wytwórnią Italo Box Music, prosimy
+                  o kontakt na: contact@italoboxmusic.com
+                </p>
+              </div>
+              <div style="clear: both"></div>
+            </li>
+            <li>
+              <em class="icon-credit-card"></em>
+              <div class="description-text">
+                <h3>PayPal</h3>
+                <p>
+                  Najszybsza oraz najbezpieczniejsza forma płatności online.
+                </p>
+              </div>
+              <div style="clear: both"></div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="useful-links">
+          <h2>Przydatne Linki</h2>
+          <a class="useful-link" href="https://www.instagram.com/italoboxmusic/?hl=pl">Instagram</a
+          ><br />
+          <a class="useful-link" href="https://italoboxmusic.wixsite.com/home">Wix</a>
+        </div>
+      </div>
+    </main>
+
+    <aside>
+      <h3 style="margin-left: 200px">Newsletter</h3>
+      <div class="newsletter">
+        <input
+          class="newsletter-email"
+          type="text"
+          placeholder="Wprowadź swój adres e-mail"
+          name="newsletter"
+        />
+        <button class="newsletter-button" type="submit">
+          <em class="icon-right-open" style="font-size: 15px; text-align: center;"></em>
+        </button>
+      </div>
+
+      <div class="information">
+        <h2>Informacja</h2>
+        <ul class="aside-list">
+          <li>Promocje</li>
+          <li>Nowe produkty</li>
+          <li>Najlepiej sprzedawane</li>
+          <li>Kontakt z nami</li>
+          <li>O nas</li>
+        </ul>
+      </div>
+
+      <div class="my-account">
+        <h2>Moje Konto</h2>
+        <ul class="aside-list">
+          <li>Moje zamówienia</li>
+          <li>Moje rachunki</li>
+          <li>Moje adresy</li>
+          <li>Moje informacje osobiste</li>
+          <li>Moje bony</li>
+        </ul>
+      </div>
+    </aside>
+  </body>
+</html>

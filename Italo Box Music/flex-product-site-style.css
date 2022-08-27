@@ -1,0 +1,20 @@
+body {
+  background-color: rgb(194, 255, 255);
+}
+
+main {
+  background-color: white;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.primary {
+  display: flex;
+  padding-top: 50px;
+}
+
+.account-buttons {
+  display: flexbox;
+  justify-content: flex-end;
+}
